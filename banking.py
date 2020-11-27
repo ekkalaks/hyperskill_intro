@@ -12,6 +12,10 @@ num9 = None
 num10 = None
 num11 = None
 num12 = None
+num13 = None
+num14 = None
+num15 = None
+num16 = None
 pin1 = None
 pin2 = None
 pin3 = None
@@ -19,7 +23,7 @@ pin4 = None
 
 
 def create_card():
-    global num7, num8, num9, num10, num11, num12
+    global num7, num8, num9, num10, num11, num12, num13, num14, num15, num16
     random.seed()
     num7 = random.randint(0, 9)
     num8 = random.randint(0, 9)
@@ -27,6 +31,11 @@ def create_card():
     num10 = random.randint(0, 9)
     num11 = random.randint(0, 9)
     num12 = random.randint(0, 9)
+    num12 = random.randint(0, 9)
+    num13 = random.randint(0, 9)
+    num14 = random.randint(0, 9)
+    num15 = random.randint(0, 9)
+    num16 = random.randint(0, 9)
 
 
 def create_pin():
@@ -53,7 +62,8 @@ def main():
             create_pin()
             print(f'Your card number:')
             print(str(num1) + str(num2) + str(num3) + str(num4) + str(num5) + str(num6) +
-                  str(num7) + str(num8) + str(num9) + str(num10) + str(num11) + str(num12))
+                  str(num7) + str(num8) + str(num9) + str(num10) + str(num11) + str(num12) +
+                  str(num13) + str(num14) + str(num15) + str(num16))
             print(f'Your card PIN:')
             print(str(pin1) + str(pin2) + str(pin3) + str(pin4) + "\n")
 
